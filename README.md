@@ -1,14 +1,14 @@
-# Tree of Life — the shape of the genome gap
+# Genome Coverage Explorer
 
-An interactive tree of life that shows, clade by clade, how much of the vertebrate
-tree has a reference genome — and how much of the gap remains. Site B of the
+An interactive, zoomable view of vertebrate taxonomy that shows, clade by clade,
+how much has a reference genome — and how much of the gap remains. One of the
 Revive & Restore genome-gap demos: the exploratory, visual companion to the
-analytical [`reviverestore-genomegap`](https://demo-reviverestore-genomegap.knowledgefutures.org)
-search. Both are built on the same three Underlay collections.
+analytical `reviverestore-genomegap` search. Both are built independently on the
+same three Underlay collections.
 
 ## What it shows
 
-- A **zoomable sunburst** of the vertebrate tree (class → order → family). Each
+- A **zoomable sunburst** of vertebrate taxonomy (class → order → family). Each
   arc is sized by species count and coloured by the share with a reference
   genome — bright aqua is sequenced, dark is the gap.
 - Click a wedge to dive into a clade, the centre to zoom back out, a family to
