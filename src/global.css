@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  /* Immersive "canopy at night" — deliberately distinct from the light Genome Gap site. */
+  --color-bg: #0d1e19;
+  --color-bg-2: #0a1814;
+  --color-panel: #12261f;
+  --color-panel-2: #17302700;
+  --color-line: #244a3d;
+  --color-line-soft: #1c3a30;
+
+  --color-ink: #eaf3ee;
+  --color-ink-soft: #b6c9c0;
+  --color-muted: #7f958c;
+  --color-faint: #5b7068;
+
+  /* Coverage scale endpoints (gap → sequenced), interpolated in code */
+  --color-gap: #35473f;
+  --color-mid: #2f8f78;
+  --color-seq: #64e6b4;
+
+  --color-glow: #64e6b4;
+  --color-threat: #e8a24a;
+
+  /* IUCN accents, tuned for the dark ground */
+  --color-cr: #e56a5f;
+  --color-en: #e0894d;
+  --color-vu: #d8b24a;
+  --color-nt: #a7c05a;
+  --color-lc: #5bb98a;
+  --color-dd: #8a9aa0;
+  --color-ex: #cbb8c6;
+  --color-ew: #b79ac0;
+  --color-ne: #6a7f77;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background:
+    radial-gradient(120% 90% at 50% -10%, #16342a 0%, transparent 55%),
+    var(--color-bg);
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+input,
+select,
+textarea {
+  font-size: 15px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-glow) 30%, transparent);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line) transparent;
+}

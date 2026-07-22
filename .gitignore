@@ -4,3 +4,6 @@ dist/
 .env.local
 *.local
 .DS_Store
+
+# build-time generated (prebuild / pnpm build regenerates from the Underlay)
+public/data/
