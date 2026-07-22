@@ -1,5 +1,4 @@
 import { Outlet, NavLink } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
 
 const NAV = [
   { to: "/", label: "Explore", end: true },
@@ -13,10 +12,10 @@ export function Layout() {
         <div className="mx-auto flex max-w-[1320px] items-center justify-between gap-6 px-6 py-4">
           <div className="flex items-baseline gap-3">
             <span className="font-display text-[20px] font-semibold tracking-[-0.01em] text-ink">
-              Tree of Life
+              Genome Coverage Explorer
             </span>
             <span className="hidden text-[12px] text-muted md:inline">
-              the shape of the genome gap
+              the vertebrate tree, by genome coverage
             </span>
           </div>
           <nav className="flex items-center gap-5 text-[13px]">
@@ -34,15 +33,6 @@ export function Layout() {
                 {label}
               </NavLink>
             ))}
-            <a
-              href="https://demo-reviverestore-genomegap.knowledgefutures.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-muted transition-colors hover:text-glow"
-            >
-              Search view
-              <ArrowUpRight size={13} />
-            </a>
           </nav>
         </div>
       </header>

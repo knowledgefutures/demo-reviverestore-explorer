@@ -42,20 +42,12 @@ export function AboutPage() {
       </section>
 
       <section className="space-y-3">
-        <h2 className="font-display text-[18px] font-semibold text-ink">Same data, another lens</h2>
+        <h2 className="font-display text-[18px] font-semibold text-ink">Open, versioned data</h2>
         <p className="text-[14px] leading-relaxed text-ink-soft">
-          This explorer and the{" "}
-          <a
-            href="https://demo-reviverestore-genomegap.knowledgefutures.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-glow hover:underline"
-          >
-            Genome Gap search
-          </a>{" "}
-          are two experiences built on the same three open collections — IUCN Red List status,
-          NCBI genome assemblies, and the GBIF taxonomic backbone that reconciles them — each
-          published as a versioned, content-addressed dataset on the Underlay.
+          Everything here is assembled from three open collections — IUCN Red List status, NCBI
+          genome assemblies, and the GBIF taxonomic backbone that reconciles them — each
+          published as a versioned, content-addressed dataset on the Underlay. The coverage
+          picture updates whenever those collections do.
         </p>
       </section>
 
