@@ -5,6 +5,10 @@
   "name": "Revive & Restore Explorer (demo)",
   "account": "reviverestore",
 
-  // No environments yet: the console registers the project and deploys
-  // nothing. Add "environments" (with at least "production") to deploy.
+  // Deployed outside the console; it links to the first host.
+  "environments": {
+    "production": {
+      "elsewhere": { "hosts": ["demo-reviverestore-explorer.knowledgefutures.org"] },
+    },
+  },
 }
